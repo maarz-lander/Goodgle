@@ -1,3 +1,15 @@
+:root {
+  /* CSS HEX */
+  --air-superiority-blue: #759aaeff;
+  --bdazzled-blue: #445d9cff;
+  --yale-blue: #174ea1ff;
+  --blue-munsell: #0690a2ff;
+  --dark-blue-gray: #6770a2ff;
+  --main-backgroud: rgb(255, 255, 255);
+  --grey-google: #dfe1e5;
+  --darken-grey-google: #b1b1b6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -37,41 +49,103 @@ header nav .nav-right-section {
 }
 
 nav .nav-right-section a {
-  margin-right: 1rem;
+  margin-right: 10px;
   color: black;
 }
 
-li .header-signin {
-  padding: 1rem;
-  color: aliceblue;
-  background-color: rgb(0, 110, 255);
-  border-color: white;
-  border-bottom: transparent;
-  border-radius: 0.5rem;
+nav .nav-right-section .menu-icon {
+  background-image: url("https://static.thenounproject.com/png/756729-200.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+nav .nav-right-section img {
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 button {
   height: max-content;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 10px;
+  padding: 10px;
 }
 
 main {
-  background-color: aliceblue;
+  background-color: var(--main-backgroud);
   height: 80vh;
+  text-align: center;
 }
 
-.main-logo {
+main .main-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50%;
+  height: 30%;
+  width: 100%;
 }
 
-.main-inputzone {
+main .main-logo img {
+  max-width: 450px;
+  width: 62%;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+main .main-input {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 30%;
+  height: 10%;
+}
+
+main .main-input-container {
+  margin-top: 0;
+  margin-bottom: auto;
+  width: 62%;
+  max-width: 600px;
+  height: 62%;
+  border-radius: 100px;
+  border: 1px solid var(--grey-google);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-input input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  outline: none;
+}
+
+main .main-input-container:hover {
+  box-shadow: 0 1px 6px 0 var(--darken-grey-google);
+}
+
+main .main-input .search-icon {
+  background-image: url("https://img.icons8.com/android/24/000000/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  margin-right: 10px;
+  opacity: 50%;
+}
+
+main .main-input .micro-icon {
+  background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 footer {
